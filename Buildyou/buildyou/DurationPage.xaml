@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Buildyou.DurationPage"
+     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
+
+    <StackLayout Margin="45, 300, 45, 0">
+        <Label Text="How long would you like to work on your selected areas of focus?"
+               FontFamily="Courier"
+               FontSize="Medium"
+               HorizontalTextAlignment="Center"/>
+        <Grid Margin="10"/>
+        <Picker x:Name="picker"
+                Title="Select a duration">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>One Week</x:String>
+                    <x:String>Two Weeks</x:String>
+                    <x:String>Three Weeks</x:String>
+                    <x:String>One Month</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Grid Margin="160"/>
+        
+        <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Text="Done" Clicked="Done_Clicked"
+        BackgroundColor="#FBF9F3" 
+        TextColor="Black"
+        CornerRadius="23"
+        HorizontalOptions="End"
+        WidthRequest="50"
+        Margin="0,0,5,0"/>
+
+        
+        <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Text="Back" Clicked="Back_Clicked"
+        BackgroundColor="#FBF9F3" 
+        TextColor="Black"
+        CornerRadius="23"
+        HorizontalOptions="Start"
+        WidthRequest="50"
+        Margin="0,-45,5,0"/>
+
+    </StackLayout>
+
+
+
+
+
+</ContentPage>
+

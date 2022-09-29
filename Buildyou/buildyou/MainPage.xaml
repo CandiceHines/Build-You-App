@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Buildyou.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
+ 
+<StackLayout Margin="10, 10, 10, 10">
+
+    <Grid Margin="60"></Grid>
+    <Label Text="B(YOU)ILD" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0,0,0,25"/>
+    <Label Text="What area's in your life would you"
+           HorizontalTextAlignment="Center" FontSize="Large" FontAttributes="Italic"/>
+    <Label Text="like to focus on?"
+           HorizontalTextAlignment="Center" FontSize="Large" FontAttributes="Italic" />
+    <Grid Margin="30"/>
+    
+    <Grid RowSpacing="35">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="120*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+
+    
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        BackgroundColor="#FBF9F3"
+        Grid.Column="0" Grid.Row="0"
+        Text="Gratitude"
+        Clicked="Gratitude_Clicked"
+        TextColor="Black"
+        FontSize="Medium" 
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+       
+
+  
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Grid.Column="1" Grid.Row="0"
+        Text="Happiness"
+        Clicked="Happiness_Clicked"
+        TextColor="Black"
+        FontSize="Medium"
+        BackgroundColor="#FBF9F3" 
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+       
+    
+     <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Grid.Column="2" Grid.Row="0"
+        Text="Exercise"
+        Clicked="Exercise_Clicked"
+        TextColor="Black"
+        FontSize="Medium"
+        BackgroundColor="#FBF9F3"  
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+    
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Grid.Column="0" Grid.Row="1"
+        Text="Sleep"
+        Clicked="Sleep_Clicked"
+        TextColor="Black"
+        FontSize="Medium"
+        BackgroundColor="#FBF9F3" 
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+    
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Grid.Column="1" Grid.Row="1"
+        Text="Organization"
+        Clicked="Organization_Clicked"
+        TextColor="Black"
+        FontSize="Medium"
+        BackgroundColor="#FBF9F3" 
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+   
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Grid.Column="2" Grid.Row="1"
+        Text="Diet"
+        Clicked="Diet_Clicked"
+        TextColor="Black"
+        FontSize="Medium"
+        BackgroundColor="#FBF9F3" 
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+    
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Grid.Column="1" Grid.Row="2"
+        Text="Relationships"
+        Clicked="Relationships_Clicked"
+        TextColor="Black"
+        FontSize="Medium"
+        BackgroundColor="#FBF9F3" 
+        CornerRadius="15"
+        HorizontalOptions="CenterAndExpand"
+        WidthRequest="110"/>
+        
+ 
+     </Grid>
+ 
+    <Grid Margin="10"/>
+ 
+
+    <Button ios:VisualElement.IsShadowEnabled="True"
+        ios:VisualElement.ShadowColor="Gray"
+        ios:VisualElement.ShadowOpacity="0.3"
+        ios:VisualElement.ShadowRadius="10"
+        Text="Next" Clicked="Next_Clicked"
+        BackgroundColor="#FBF9F3" 
+        TextColor="Black"
+        CornerRadius="23"
+        HorizontalOptions="EndAndExpand"
+        WidthRequest="50"
+        Margin="0,0,15,0"/>
+
+
+</StackLayout>
+
+</ContentPage>

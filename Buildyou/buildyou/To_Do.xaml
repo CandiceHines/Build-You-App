@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Buildyou.To_Do">
+
+    <StackLayout Margin="45, 220, 45, 0">
+        <Label Text="TO-DO"
+               HorizontalOptions="Center"
+               FontSize="Title"
+               FontFamily="Courier"/>
+        <Grid Margin="10"/>
+        <Grid ColumnSpacing="14">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="25"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"/>
+            </Grid.RowDefinitions>
+
+           <CheckBox
+           Grid.Column="0" Grid.Row="0"
+           Color="Black"
+           Opacity=".3"/>
+           <Label Grid.Column="1" Grid.Row="0" Text="Some to-do item listed here blah blah blah blah blah blah"/>
+
+        <Button
+            Grid.Column="2"
+            Text="+"
+            TextColor="Black"
+            BackgroundColor="#FBF9F3"
+            Margin="0,0,0,0"
+            />
+           
+        </Grid>
+      
+
+    </StackLayout>
+
+</ContentPage>
+
